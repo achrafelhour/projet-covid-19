@@ -1,5 +1,5 @@
 {
-  "name": "k",
+  "name": "starter-file",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "watch:sass:prod": "node-sass sass/main.scss dist/css/style.css -w",
     "server:prod": "live-server --port=8181 --browser=chrome",
     "start:prod": "concurrently  \"npm run server:prod\" \"npm run watch:sass\"",
-    "compress:css": "node-sass dist/css/style.prefix.css dist/css/style.css --output-style compressed",
+    "compress:css": "node-sass dist/css/style.comp.css dist/css/style.css --output-style compressed",
     "building-prod": "npm-run-all compress:css",
     "fin-production": "===========================================",
     "Mode-dev": "==============Branch dev==============",
@@ -20,7 +20,7 @@
     "building-dev": "npm-run-all compiler:sass concat:css prefix:css",
     "fin-dev": "==============Branch dev=============="
   },
-  "author": "achraf",
+  "author": "yahya",
   "license": "ISC",
   "homepage": "https://tijaniabdellatif.github.io/",
   "devDependencies": {
@@ -36,5 +36,8 @@
   "browserslist": [
     "defaults",
     "last 3 versions"
-  ]
+  ],
+  "dependencies": {
+    "package": "^1.0.1"
+  }
 }
