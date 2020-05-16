@@ -73,7 +73,7 @@
             padding: 2em 2em;
             background-color: white;
             border: solid 2px #1078ad;
-            &:hover{
+            &:active{
                 color:yellow;
                 background-color: #1078ad;
             }
@@ -121,6 +121,23 @@
         }
     }
 }
+.btnResule{
+    .rslBtn{
+        border: solid 2px #1078ad;
+        border-radius: 10px;
+        background-color: #cfe4ef;
+        padding: .7em 3em;
+        color: #1078ad;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover{
+            background-color: #1078ad;
+            color: white;
+        }
+    }
+}
+
 .remove{
     display: none;
 }
@@ -141,4 +158,5 @@
         left: 50%;
         position: relative;
         transform: translate(-50%);
+    
 }
